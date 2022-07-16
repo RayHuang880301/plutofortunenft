@@ -1,0 +1,33 @@
+{
+  "name": "meloscoutapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint --fix"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.5.4",
+    "all": "^0.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-ava": "^13.2.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-jest": "^26.5.3",
+    "ethers": "^5.6.9",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.31",
+    "next": "12.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sweetalert2": "^11.4.18",
+    "wagmi": "^0.5.9"
+  },
+  "devDependencies": {
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6"
+  }
+}
