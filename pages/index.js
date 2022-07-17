@@ -21,10 +21,7 @@ export default function Home() {
 				<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet"></link>
 				<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;400;600;900&display=swap" rel="stylesheet"></link>
 			</Head>
-
-
 			<DynamicComponentWithNoSSR />
-
 		</>
 	);
 }
