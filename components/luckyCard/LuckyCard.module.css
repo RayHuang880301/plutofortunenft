@@ -5,3 +5,13 @@
   color: #F1CD4B;;
   /* margin-top: 0.2rem; */
 }
+
+@media (max-width: 450px) {
+  .box {
+    width: 160px;
+    height: 160px;
+  }
+  .word {
+    font-size: 1rem;
+  }
+}

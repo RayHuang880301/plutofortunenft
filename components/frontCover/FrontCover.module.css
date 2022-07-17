@@ -139,3 +139,17 @@
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+@media (max-width: 450px) {
+  .section {
+    background: url('../../assets/bg2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .word {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}

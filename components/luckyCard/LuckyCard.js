@@ -6,7 +6,7 @@ export default function LuckyCard(props) {
 	const { img, choice } = props;
 	return (
 		<dic className={styles.box}>
-			<Image src={img} width={180} height={180} layout="fixed" alt=''/>
+			<Image src={img} width={150} height={150} layout="fixed" alt=''/>
 			<div className={styles.word}>{choice}</div>
 		</dic>
 	);
