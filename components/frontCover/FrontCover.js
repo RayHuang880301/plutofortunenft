@@ -68,7 +68,7 @@ const FrontCover = () => {
 			addressOrName: CONTACT_ADDRESS,
 			contractInterface: CONTACT_ABI,
 			functionName: 'publicMint',
-			args: [price, address, 2, 1],
+			args: [address, 2, 1],
 			overrides: {
 				value: ethers.utils.parseEther(price),
 			},
