@@ -47,6 +47,10 @@ const FrontCover = () => {
 	const { address } = useAccount();
 	const { data: ensName } = useEnsName({ address });
 	const { data: connectData, connect, error } = useConnect({
+		onError(error) {
+			console.log(error);
+			connectError();
+		},
 		connector: window.ethereum ? defaultConnector : walletConnectConnector,
 	});
 	const { disconnect } = useDisconnect();
@@ -159,7 +163,7 @@ const FrontCover = () => {
 				<div className={styles.container}>
 					{address && <button className={styles.profile} onClick={() => disconnect()}>{ensName ?? profile}</button>} 
 					{!address && <button className={styles.btn} onClick={() => openModal()}>Connect</button>}
-					{error && <div {...connectError()}></div>}
+					{/* {error && <div {...connectError()}></div>} */}
 					{address && 
 					<>
 						<div className={styles.Cards}>
