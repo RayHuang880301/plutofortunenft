@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Link from 'next/link';
-import styles from './frontCover.module.css';
+import LuckyCard from '../luckyCard/LuckyCard';
+import styles from './FrontCover.module.css';
 import logo from '../../assets/plutolab.png';
 import dcLogo from '../../assets/dcLogo.svg';
 import twLogo from '../../assets/twLogo.svg';
@@ -122,16 +123,17 @@ const FrontCover = () => {
 				{error && <div {...connectError()}></div>}
 				{address && 
 				<>
-					<div className={styles.imgCards}>
-						<Image className={styles.logo} src={plutoImg1} width={180} height={180} layout="fixed" alt=''/>
-						<Image className={styles.logo} src={plutoImg2} width={180} height={180} layout="fixed" alt=''/>
-						<Image className={styles.logo} src={plutoImg3} width={180} height={180} layout="fixed" alt=''/>
-						<Image className={styles.logo} src={plutoImg4} width={180} height={180} layout="fixed" alt=''/>
+					<div className={styles.Cards}>
+						<LuckyCard img={plutoImg1} choice="學業運"/>
+						<LuckyCard img={plutoImg2} choice="事業運"/>
+						<LuckyCard img={plutoImg3} choice="愛情運"/>
+						<LuckyCard img={plutoImg4} choice="健康運"/>
 					</div>
-					<div className={styles.word}>今晚，我想來點...
-						<br/>算命NFT
+					<div className={styles.word}>今天，我想來點...
+						
 					</div>
 					<button className={styles.mintBtn} onClick={() => mint()}>免費求籤</button>
+					<div className={styles.tip}>信徒眾多，每人限求一籤</div>
 				</>
 				}
 			</div>

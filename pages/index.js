@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 // import FrontCover from '../components/frontCover/frontCover'
 import dynamic from 'next/dynamic';
-const DynamicComponentWithNoSSR = dynamic(() => import('../components/frontCover/frontCover'), {
+const DynamicComponentWithNoSSR = dynamic(() => import('../components/frontCover/FrontCover'), {
 	ssr: false
 });
 
@@ -13,7 +13,7 @@ export default function Home() {
 			<Head>
 				<title>Pluto Fortune NFT</title>
 				<meta property="og:type" content="website" />
-				<meta property="og:title" content="PlutoFortuneNFT" />
+				<meta property="og:title" content="Pluto Fortune NFT" />
 				<meta property="og:image" content="/public/main.png"></meta>
 				<meta property="og:description" content="Pluto Lab x Park Park Carnival fortune NFT"></meta>
 				<link rel="preconnect" href="https://fonts.googleapis.com" />

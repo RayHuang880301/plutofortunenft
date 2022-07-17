@@ -65,7 +65,7 @@
   background-color: #FB8111;
 }
 
-.imgCards {
+.Cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -75,7 +75,7 @@
 .word {
   text-align: center;
   color: white;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0;
   font-size: 2rem;
   font-weight: 600;
   color: #F1CD4B;
@@ -96,4 +96,11 @@
 
 .mintBtn:hover {
   background-color: #FB8111;
+}
+
+.tip {
+  margin: 0.2rem;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
 }
