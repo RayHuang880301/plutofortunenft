@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import FrontCover from '../components/frontCover/FrontCover';
+// import FrontCover from '../components/frontCover/FrontCover';
 import dynamic from 'next/dynamic';
-// const DynamicComponentWithNoSSR = dynamic(() => import('../components/frontCover/FrontCover'), {
-// 	ssr: false
-// });
+const DynamicComponentWithNoSSR = dynamic(() => import('../components/frontCover/FrontCover'), {
+	ssr: false
+});
 
 export default function Home() {
 	return (
@@ -21,7 +21,7 @@ export default function Home() {
 				<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet"></link>
 				<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;400;600;900&display=swap" rel="stylesheet"></link>
 			</Head>
-			<FrontCover />
+			<DynamicComponentWithNoSSR />
 		</>
 	);
 }
