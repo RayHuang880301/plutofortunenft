@@ -104,3 +104,38 @@
   font-weight: 600;
   color: rgba(0, 0, 0, 0.7);
 }
+
+.modal {
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+  /* height: 80%; */
+  width: 60%;
+  max-width: 330px;
+  /* max-height: 700px; */
+  margin: auto;
+  padding: 1rem;
+}
+
+.web3Card {
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+}
+.web3Card > h4 {
+  margin: .5rem;
+}
+.web3Card:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.web3Img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+.web3Hr {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}

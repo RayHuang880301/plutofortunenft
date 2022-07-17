@@ -1,0 +1,13 @@
+{
+  "name": "Pluto Lab x Park Park Carnival",
+  "description": "Pluto Lab 王嘻冥算命攤 - 互動式算命NFT",
+  "image": "https://gateway.pinata.cloud/ipfs/QmUpLTjAwQn8EmK3MXDwGGPJzdYEWfxazrvbNUFeejN3Rt",
+  "edition": 2,
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "PlutoLab x ParkPark Carnival"
+    }
+  ],
+  "animation_url": "https://plutoparkparknft.vercel.app/"
+}

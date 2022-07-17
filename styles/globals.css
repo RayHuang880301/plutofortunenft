@@ -27,3 +27,10 @@ a {
   background-color: #F1B458!important;
 
 }
+
+.ReactModal__Overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.45);
+}
