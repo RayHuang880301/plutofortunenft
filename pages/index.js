@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 // import FrontCover from '../components/frontCover/FrontCover';
 import dynamic from 'next/dynamic';
-const DynamicComponentWithNoSSR = dynamic(() => import('../components/frontCover/frontCover.js'), {
+const DynamicComponentWithNoSSR = dynamic(() => import('../components/frontCover/frontCover'), {
 	ssr: false
 });
 
